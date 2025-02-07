@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { auth } from "./firebase-config";
 import { signInAnonymously, onAuthStateChanged } from "firebase/auth";
-import Editor from "./components/text-editor";
+import Editor from "./components/Editor";
 
 function App() {
   useEffect(() => {
