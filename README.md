@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# 📝 Google Docs Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-9.22-orange?logo=firebase)](https://firebase.google.com/)
+[![Vite](https://img.shields.io/badge/Vite-4.4-purple?logo=vite)](https://vitejs.dev/)
 
-Currently, two official plugins are available:
+A real-time collaborative document editor with Firebase integration, featuring anonymous authentication and automatic content synchronization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Demo Preview](https://via.placeholder.com/800x400.png?text=Google+Docs+Clone+Demo) *Replace with actual screenshot*
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Real-time Collaboration**  
+  Instant document updates using Firestore listeners
+- **Rich Text Editing**  
+  Powerful WYSIWYG editor with ReactQuill
+- **Anonymous Auth**  
+  Seamless authentication with Firebase Anonymous sign-in
+- **Auto-save**  
+  Throttled content saving to Firestore (1s interval)
+- **Cursor Preservation**  
+  Maintains cursor position during remote updates
+- **Offline Support**  
+  Built-in Firestore offline persistence
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
+- Node.js ≥16
+- Firebase project with Firestore enabled
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Installation
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/google-docs-clone.git
+cd google-docs-clone
