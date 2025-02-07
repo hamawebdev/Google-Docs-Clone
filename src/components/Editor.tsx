@@ -10,7 +10,7 @@ const Editor = () => {
 
   const documentRef = doc(db, 'documents', 'test-doc');
 
-  const saveContent ():any =>{
+  const saveContent =  () => {
     if(quillRef.current){
         const content = quillRef.current.getEditor().getContents();
         console.log('saving to db...',content);
