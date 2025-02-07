@@ -7,7 +7,7 @@
 
 A real-time collaborative document editor with Firebase integration, featuring anonymous authentication and automatic content synchronization.
 
-![Demo Preview](https://via.placeholder.com/800x400.png?text=Google+Docs+Clone+Demo) *Replace with actual screenshot*
+![Demo Preview](previeww.png) 
 
 ## ✨ Features
 
